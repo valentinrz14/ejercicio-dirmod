@@ -1,0 +1,50 @@
+@import "../../assets/css/Variables.scss";
+
+.ec-cotizacion-detail {
+  padding: 10px 30px;
+  &-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    background: $blueDark;
+    border-radius: 10px;
+    margin: 0;
+    padding: 0;
+    &__nombre,
+    &__moneda,
+    &__precio,
+    &__fecha {
+      font-weight: 400;
+      color: $white;
+      text-align: center;
+      padding: 10px;
+      font-size: 26px;
+      p {
+        font-size: 20px;
+        color: $greyWhite;
+        padding: 0;
+        margin: 10px;
+      }
+    }
+    &__nombre,
+    &__moneda {
+      grid-row: 1;
+      margin: 0 50px;
+      border-bottom: 1px solid $white;
+    }
+    &__precio,
+    &__fecha {
+      grid-row: 2;
+    }
+    &__nombre,
+    &__precio {
+      grid-column: 1;
+    }
+    &__moneda,
+    &__fecha {
+      grid-column: 2;
+    }
+  }
+}

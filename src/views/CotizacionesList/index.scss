@@ -1,0 +1,113 @@
+@import "../../assets/css/Variables.scss";
+
+.ec {
+  &-user-container {
+    padding: 10px 30px;
+  }
+  &-table-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr auto;
+    justify-content: center;
+    background: $background;
+    margin: 0;
+    padding: 0;
+  }
+  &-table-title {
+    grid-row: 1;
+    grid-column: span 4;
+    padding: 10px 0px;
+    margin: 0;
+    margin-bottom: -5px;
+    background: $blueDark;
+    color: $white;
+    font-size: 20px;
+    text-align: center;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+  }
+  &-table-content {
+    grid-row: 2;
+    grid-column: span 4;
+    display: grid;
+    grid-template-columns: 15% 20% 20% 20% 20%;
+    grid-template-rows: 1fr;
+    padding: 0 10px;
+    background: $greyWhite;
+    font-weight: bold;
+    border-right: 0.5px solid $greyDark;
+    border-left: 0.5px solid $greyDark;
+    &__id,
+    &__nombre,
+    &__moneda,
+    &__precio,
+    &__fecha {
+      padding: 0 10px;
+      text-align: left;
+    }
+    &__id {
+      grid-column: 1;
+    }
+    &__nombre {
+      grid-column: 2;
+    }
+    &__moneda {
+      grid-column: 3;
+    }
+    &__precio {
+      grid-column: 4;
+    }
+    &__fecha {
+      grid-column: 5;
+    }
+  }
+  &-table-list {
+    grid-row: 3;
+    grid-column: span 4;
+    border-right: 0.5px solid $greyDark;
+    border-left: 0.5px solid $greyDark;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    &__button {
+      text-decoration: none;
+      margin: 0;
+      padding: 0;
+      color: inherit;
+    }
+    &__content {
+      display: grid;
+      grid-template-columns: 15% 20% 20% 20% 20%;
+      grid-template-rows: 1fr;
+      padding: 5px 10px;
+      border-bottom: 1px solid $greyDark;
+      transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+      &:hover {
+        animation-duration: 0.25s;
+        box-shadow: 0px 0px 10px 5px $boxShadow;
+      }
+      &-id,
+      &-nombre,
+      &-moneda,
+      &-precio,
+      &-fecha {
+        padding: 0 10px;
+        text-align: left;
+      }
+      &-id {
+        grid-column: 1;
+      }
+      &-nombre {
+        grid-column: 2;
+      }
+      &-moneda {
+        grid-column: 3;
+      }
+      &-precio {
+        grid-column: 4;
+      }
+      &-fecha {
+        grid-column: 5;
+      }
+    }
+  }
+}

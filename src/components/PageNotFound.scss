@@ -1,0 +1,42 @@
+@import "../assets/css/Variables.scss";
+.ec-not-found-page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: $footerBackground;
+  border-radius: 7px;
+  margin: 0;
+  padding: 20px 20px;
+  &__title {
+    color: $white;
+    font-size: 100px;
+    letter-spacing: 10px;
+    font-weight: 300;
+    text-align: center;
+    text-shadow: 5px 3px 5px $black;
+    padding: 0;
+    margin: 0;
+  }
+  &__description {
+    margin: 10px 0;
+    padding: 0;
+    font-size: 18px;
+    color: $greyWhite;
+    text-align: center;
+  }
+  &__btn {
+    background: $blueDark;
+    margin: 10px 0;
+    color: $white;
+    font-size: 18px;
+    border-radius: 10px;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: 0.3s;
+    &:hover {
+      color: $black;
+      background: $background;
+    }
+  }
+}
