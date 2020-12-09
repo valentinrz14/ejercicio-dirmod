@@ -32,7 +32,7 @@ const CotizacionesList = () => {
   // Searching and Filter by Moneda
   const searchingTerm = () => {
     return (x) =>
-      x.nombre.trim().toLowerCase().includes(search.trim()) || !search;
+      x.nombre.trim().toLowerCase().includes(search.trim().toLowerCase()) || !search;
   };
 
   const renderList = () => {
