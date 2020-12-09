@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faInstagram,
@@ -6,23 +6,10 @@ import {
   faFacebook,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
-import swal from "sweetalert";
 
 import "../assets/css/Template.scss";
 
 const FooterLayout = () => {
-  const [email, setEmail] = useState("");
-
-  const handleOnClick = () => {
-    const re = /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/g;
-    if (re.test(email)) {
-      swal("Good job!", "Email sent successfully", "success");
-      setEmail("");
-    } else {
-      swal("!Opps", "verified your email", "error");
-    }
-  };
-
   return (
     <footer className="ec-footer">
       <div className="ec-footer-container">
